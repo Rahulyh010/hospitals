@@ -1,0 +1,6 @@
+node_modules
+pnpm-lock.yaml
+public
+vite-env.d.ts
+dist
+routeTree.gen.ts
