@@ -2,7 +2,6 @@ import { useNavigate } from "@tanstack/react-router";
 import React from "react";
 import { FaCity } from "react-icons/fa6";
 
-import { useSettings } from "@/lib/stores/useSettings";
 const cities = [
   {
     name: "Mumbai",
@@ -48,7 +47,6 @@ const cities = [
 
 const CityGallery: React.FC = () => {
   const navigate = useNavigate();
-  const { theme } = useSettings();
   return (
     <div className="flex flex-wrap justify-center gap-8 p-8 bg-gray-100">
       {cities.map((city, index) => (
