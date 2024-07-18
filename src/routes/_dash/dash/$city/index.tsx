@@ -29,7 +29,7 @@ function Results() {
   const [hospitals, setHospitals] = useState<THospitals>([]);
   const router = useRouter();
   const { theme } = useSettings();
-  const { authenticated } = useAuth;
+  const { authenticated } = useAuth();
 
   const { isPending, mutate } = useMutation({
     mutationFn: async () => {
